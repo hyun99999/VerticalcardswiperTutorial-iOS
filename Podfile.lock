@@ -1,0 +1,16 @@
+PODS:
+  - VerticalCardSwiper (2.3.1)
+
+DEPENDENCIES:
+  - VerticalCardSwiper
+
+SPEC REPOS:
+  trunk:
+    - VerticalCardSwiper
+
+SPEC CHECKSUMS:
+  VerticalCardSwiper: 68df635b354500f86934ea044ade37a264c044c6
+
+PODFILE CHECKSUM: 0d107fb40dbac989467656d447e2681068704508
+
+COCOAPODS: 1.10.1
