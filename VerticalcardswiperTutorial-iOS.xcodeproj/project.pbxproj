@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		AB1FB579ECA32E9DAF160C80 /* Pods_VerticalcardswiperTutorial_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFE139AFC4DDB41577318F7 /* Pods_VerticalcardswiperTutorial_iOS.framework */; };
+		F814DDF026BB8A3000AF6921 /* VerticalCardSwiperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F814DDEE26BB8A3000AF6921 /* VerticalCardSwiperCell.swift */; };
+		F814DDF126BB8A3000AF6921 /* VerticalCardSwiperCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F814DDEF26BB8A3000AF6921 /* VerticalCardSwiperCell.xib */; };
 		F8EF187026BAE18A00C4D560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EF186F26BAE18A00C4D560 /* AppDelegate.swift */; };
 		F8EF187226BAE18A00C4D560 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EF187126BAE18A00C4D560 /* SceneDelegate.swift */; };
 		F8EF187426BAE18A00C4D560 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EF187326BAE18A00C4D560 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 		1BFE139AFC4DDB41577318F7 /* Pods_VerticalcardswiperTutorial_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerticalcardswiperTutorial_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B62D99A9734D6B6A953A57 /* Pods-VerticalcardswiperTutorial-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerticalcardswiperTutorial-iOS.release.xcconfig"; path = "Target Support Files/Pods-VerticalcardswiperTutorial-iOS/Pods-VerticalcardswiperTutorial-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		D18BB6809E2D7FD91B87A7F6 /* Pods-VerticalcardswiperTutorial-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerticalcardswiperTutorial-iOS.debug.xcconfig"; path = "Target Support Files/Pods-VerticalcardswiperTutorial-iOS/Pods-VerticalcardswiperTutorial-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F814DDEE26BB8A3000AF6921 /* VerticalCardSwiperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCardSwiperCell.swift; sourceTree = "<group>"; };
+		F814DDEF26BB8A3000AF6921 /* VerticalCardSwiperCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerticalCardSwiperCell.xib; sourceTree = "<group>"; };
 		F8EF186C26BAE18A00C4D560 /* VerticalcardswiperTutorial-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VerticalcardswiperTutorial-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8EF186F26BAE18A00C4D560 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8EF187126BAE18A00C4D560 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +60,6 @@
 				D18BB6809E2D7FD91B87A7F6 /* Pods-VerticalcardswiperTutorial-iOS.debug.xcconfig */,
 				B2B62D99A9734D6B6A953A57 /* Pods-VerticalcardswiperTutorial-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +91,8 @@
 				F8EF187826BAE18B00C4D560 /* Assets.xcassets */,
 				F8EF187A26BAE18B00C4D560 /* LaunchScreen.storyboard */,
 				F8EF187D26BAE18B00C4D560 /* Info.plist */,
+				F814DDEE26BB8A3000AF6921 /* VerticalCardSwiperCell.swift */,
+				F814DDEF26BB8A3000AF6921 /* VerticalCardSwiperCell.xib */,
 			);
 			path = "VerticalcardswiperTutorial-iOS";
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8EF187C26BAE18B00C4D560 /* LaunchScreen.storyboard in Resources */,
+				F814DDF126BB8A3000AF6921 /* VerticalCardSwiperCell.xib in Resources */,
 				F8EF187926BAE18B00C4D560 /* Assets.xcassets in Resources */,
 				F8EF187726BAE18A00C4D560 /* Main.storyboard in Resources */,
 			);
@@ -207,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8EF187426BAE18A00C4D560 /* ViewController.swift in Sources */,
+				F814DDF026BB8A3000AF6921 /* VerticalCardSwiperCell.swift in Sources */,
 				F8EF187026BAE18A00C4D560 /* AppDelegate.swift in Sources */,
 				F8EF187226BAE18A00C4D560 /* SceneDelegate.swift in Sources */,
 			);
