@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         
         cardSwiper.datasource = self
         cardSwiper.delegate = self
-        
+
         cardSwiper.register(nib: UINib(nibName: "VerticalCardSwiperCell", bundle: nil), forCellWithReuseIdentifier: "VerticalCardSwiperCell")
         
         setList()
@@ -76,7 +76,9 @@ extension ViewController {
 // MARK: - VerticalCardSwiperDelegate
 
 extension ViewController: VerticalCardSwiperDelegate {
-
+    func didTapCard(verticalCardSwiperView: VerticalCardSwiperView, index: Int) {
+        print("index: \(index)")
+    }
 }
 // MARK: - VerticalCardSwiperDatasource
 
