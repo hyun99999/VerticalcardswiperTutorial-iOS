@@ -12,6 +12,7 @@ class VerticalCardSwiperCell: CardCell {
 
     // MARK: - @IBOutlet Properties
     
+    @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var opacityView: UIView!
     @IBOutlet weak var brandLabel: UILabel!
@@ -20,22 +21,37 @@ class VerticalCardSwiperCell: CardCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     
-    // MARK: - Life Cycle
+    // MARK: - Life Cycle 
     
     override func awakeFromNib() {
         super.awakeFromNib()
         setUI()
     }
+    
+    override var isHighlighted: Bool {
+        didSet {
+            if isHighlighted {
+                UIView.animate(withDuration: 0.1) {
+                    self.bgView.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+                }
+            } else {
+                UIView.animate(withDuration: 0.3) {
+                    self.bgView.transform = CGAffineTransform(scaleX: 1, y: 1)
+                }
+            }
+        }
+    }
+    
 }
 
 extension VerticalCardSwiperCell {
     private func setUI() {
-        backgroundImage?.layer.cornerRadius = 10
+        bgView.layer.cornerRadius = 10
+        bgView.clipsToBounds = true
+        
         backgroundImage.contentMode = .scaleAspectFill
         
-        opacityView.backgroundColor = UIColor.black
-        opacityView.alpha = 0.4
-        opacityView.layer.cornerRadius = 10
+        opacityView.backgroundColor = UIColor.black.withAlphaComponent(0.2)
         
         brandLabel.font = UIFont.systemFont(ofSize: 15, weight: .bold)
         brandLabel.textColor = .white
