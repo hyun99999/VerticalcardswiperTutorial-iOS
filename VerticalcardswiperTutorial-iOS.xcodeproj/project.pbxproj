@@ -16,6 +16,10 @@
 		F8EF187726BAE18A00C4D560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EF187526BAE18A00C4D560 /* Main.storyboard */; };
 		F8EF187926BAE18B00C4D560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8EF187826BAE18B00C4D560 /* Assets.xcassets */; };
 		F8EF187C26BAE18B00C4D560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EF187A26BAE18B00C4D560 /* LaunchScreen.storyboard */; };
+		F8FC434A26BE0D980033E151 /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FC434926BE0D980033E151 /* CustomPresentationController.swift */; };
+		F8FC434D26BEBA250033E151 /* DetailCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FC434B26BEBA250033E151 /* DetailCardViewController.swift */; };
+		F8FC435026BEBA9C0033E151 /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FC434F26BEBA9C0033E151 /* PopAnimator.swift */; };
+		F8FC435426BEE39A0033E151 /* DetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FC435326BEE39A0033E151 /* DetailScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		F8EF187826BAE18B00C4D560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8EF187B26BAE18B00C4D560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8EF187D26BAE18B00C4D560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8FC434926BE0D980033E151 /* CustomPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
+		F8FC434B26BEBA250033E151 /* DetailCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCardViewController.swift; sourceTree = "<group>"; };
+		F8FC434F26BEBA9C0033E151 /* PopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
+		F8FC435326BEE39A0033E151 /* DetailScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,15 +94,51 @@
 			children = (
 				F8EF186F26BAE18A00C4D560 /* AppDelegate.swift */,
 				F8EF187126BAE18A00C4D560 /* SceneDelegate.swift */,
-				F8EF187326BAE18A00C4D560 /* ViewController.swift */,
-				F8EF187526BAE18A00C4D560 /* Main.storyboard */,
 				F8EF187826BAE18B00C4D560 /* Assets.xcassets */,
-				F8EF187A26BAE18B00C4D560 /* LaunchScreen.storyboard */,
 				F8EF187D26BAE18B00C4D560 /* Info.plist */,
+				F8EF187A26BAE18B00C4D560 /* LaunchScreen.storyboard */,
+				F8FC435826BEEBBB0033E151 /* Cells */,
+				F8FC435726BEEBA20033E151 /* View */,
+				F8FC435626BEEB980033E151 /* Controller */,
+				F8FC435526BEEB920033E151 /* Model */,
+			);
+			path = "VerticalcardswiperTutorial-iOS";
+			sourceTree = "<group>";
+		};
+		F8FC435526BEEB920033E151 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8FC434F26BEBA9C0033E151 /* PopAnimator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8FC435626BEEB980033E151 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F8EF187326BAE18A00C4D560 /* ViewController.swift */,
+				F8FC434926BE0D980033E151 /* CustomPresentationController.swift */,
+				F8FC434B26BEBA250033E151 /* DetailCardViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F8FC435726BEEBA20033E151 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8EF187526BAE18A00C4D560 /* Main.storyboard */,
+				F8FC435326BEE39A0033E151 /* DetailScrollView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8FC435826BEEBBB0033E151 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
 				F814DDEE26BB8A3000AF6921 /* VerticalCardSwiperCell.swift */,
 				F814DDEF26BB8A3000AF6921 /* VerticalCardSwiperCell.xib */,
 			);
-			path = "VerticalcardswiperTutorial-iOS";
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,10 +256,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8FC435026BEBA9C0033E151 /* PopAnimator.swift in Sources */,
 				F8EF187426BAE18A00C4D560 /* ViewController.swift in Sources */,
 				F814DDF026BB8A3000AF6921 /* VerticalCardSwiperCell.swift in Sources */,
 				F8EF187026BAE18A00C4D560 /* AppDelegate.swift in Sources */,
+				F8FC434A26BE0D980033E151 /* CustomPresentationController.swift in Sources */,
 				F8EF187226BAE18A00C4D560 /* SceneDelegate.swift in Sources */,
+				F8FC435426BEE39A0033E151 /* DetailScrollView.swift in Sources */,
+				F8FC434D26BEBA250033E151 /* DetailCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
