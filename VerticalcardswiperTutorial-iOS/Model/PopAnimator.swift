@@ -68,7 +68,7 @@ extension PopAnimator {
         
         UIView.animate(withDuration: transitonDuration / 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: {
             let frame = selectedCell.convert(selectedCell.bgView.frame, to: fromVC.view)
-//            let frame = CGRect(x: 20, y: 100, width: UIScreen.main.bounds.width - 40, height: 500)
+
             fromVC.view.frame = frame
             fromVC.view.layer.cornerRadius = 10
             fromVC.scrollView.imageView.frame.size.width = UIScreen.main.bounds.width - 40
@@ -78,7 +78,6 @@ extension PopAnimator {
             toVC.tabBar.frame.origin.y = UIScreen.main.bounds.height - toVC.tabBar.frame.height
         }) { completed in
             transitionContext.completeTransition(completed)
-            toVC.view.addSubview(toVC.tabBar)
         }
     }
 }

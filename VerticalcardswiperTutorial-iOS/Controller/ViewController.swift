@@ -40,7 +40,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         cardSwiper.datasource = self
         cardSwiper.delegate = self
-
+        
+        cardSwiper.isSideSwipingEnabled = false
+        
         cardSwiper.register(nib: UINib(nibName: "VerticalCardSwiperCell", bundle: nil), forCellWithReuseIdentifier: "VerticalCardSwiperCell")
         
         setList()
